@@ -8,7 +8,7 @@
         "venue": "Optus Stadium, Perth",
         "format": "Test",
         "year": 2025,
-        "match_date": ""
+        "match_date": "2025-11-21"
       },
       "metadata": {
         "source": "Official match highlights",
@@ -18,10 +18,10 @@
       },
       "deliveries": [
         {
-          "id": "inn1_ov6_ball2",
+          "id": "inn1_ov6_ball3",
           "innings": 1,
           "over": 6,
-          "ball": 2,
+          "ball": 3,
           "team_bowling": "Australia",
           "team_batting": "England",
           "bowler": "Mitchell Starc",
@@ -51,10 +51,10 @@
           ]
         },
         {
-          "id": "inn1_ov10_ball1",
+          "id": "inn1_ov19_ball5",
           "innings": 1,
-          "over": 10,
-          "ball": 1,
+          "over": 19,
+          "ball": 5,
           "team_bowling": "Australia",
           "team_batting": "England",
           "bowler": "Cameron Green",
@@ -79,6 +79,143 @@
               "tag": "drs_review",
               "start": "00:01:55",
               "end": "00:01:57",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn2_ov1_ball2",
+          "innings": 2,
+          "over": 1,
+          "ball": 2,
+          "team_bowling": "England",
+          "team_batting": "Australia",
+          "bowler": "Jofra Archer",
+          "batter": "Jake Weatherald",
+          "onfield_decision": "Not Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:04:53",
+              "end": "00:04:58",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:04:59",
+              "end": "00:05:03",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rothesay_test_day5_2025",
+      "youtube_url": "https://www.youtube.com/watch?v=yzr2rXRGJz8",
+      "match": {
+        "teams": ["England", "India"],
+        "venue": "The Oval, London",
+        "format": "Test",
+        "year": 2025,
+        "match_date": "2025-08-04"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "broadcaster": "Sky Sports Cricket",
+        "umpires": ["Kumar Dharmasena (SL)", "Ahsan Raza (PAK)"],
+        "referee": ""
+      },
+      "deliveries": [
+        {
+          "id": "inn4_ova_balla",
+          "innings": 4,
+          "over": -1,
+          "ball": -1,
+          "team_bowling": "India",
+          "team_batting": "England",
+          "bowler": "Mohammed Siraj",
+          "batter": "Jamie Overton",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "umpires-call"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:02:02",
+              "end": "00:02:08",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:02:39",
+              "end": "00:02:45",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aus_ind_4th_t20i_2025",
+      "youtube_url": "https://www.youtube.com/watch?v=6nKGHuRQbLk",
+      "match": {
+        "teams": ["Australia", "India"],
+        "venue": "Carrara Stadium, Gold Coast",
+        "format": "T20I",
+        "year": 2025,
+        "match_date": "2025-11-05"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "broadcaster": "Fox Cricket",
+        "umpires": [],
+        "referee": ""
+      },
+      "deliveries": [
+        {
+          "id": "inn2_ov4_ball4",
+          "innings": 2,
+          "over": 4,
+          "ball": 4,
+          "team_bowling": "India",
+          "team_batting": "Australia",
+          "bowler": "Axar Patel",
+          "batter": "Matthew Short",
+          "onfield_decision": "Not Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:05:00",
+              "end": "00:05:05",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:05:05",
+              "end": "00:05:09",
               "notes": ""
             }
           ]

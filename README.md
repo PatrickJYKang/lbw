@@ -32,6 +32,8 @@ Each **delivery** corresponds to a single LBW appeal, including:
   - `delivery` (run-up → on-field decision)
   - `review` (ball-tracking → third umpire decision)
 
+Unavailable numerical fields are recorded as -1.
+
 The full schema is defined in `lbw_schema.json`.
 
 ---
