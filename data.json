@@ -1,0 +1,56 @@
+{
+  "videos": [
+    {
+      "id": "ashes_2025_26_1stTest_day1",
+      "youtube_url": "https://www.youtube.com/watch?v=ptKLdFTZSCw",
+      "match": {
+        "teams": ["Australia", "England"],
+        "venue": "Optus Stadium, Perth",
+        "format": "Test",
+        "year": 2025,
+        "match_date": ""
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "broadcaster": "Fox Cricket",
+        "umpires": ["Adrian Holdstock", "Nitin Menon"],
+        "referee": ""
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov6_ball2",
+          "innings": 1,
+          "over": 6,
+          "ball": 2,
+          "team_bowling": "Australia",
+          "team_batting": "England",
+          "bowler": "Mitchell Starc",
+          "batter": "Ben Duckett",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:00:46",
+              "end": "00:00:51",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:00:51",
+              "end": "00:00:53",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
