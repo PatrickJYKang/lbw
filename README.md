@@ -78,7 +78,7 @@ Please follow the existing formatting and naming conventions:
 
 ## Licence
 
-This dataset is released into the public domain under the CC0 1.0 Universal dedication. It contains only factual metadata and manually logged timestamps.
+This dataset is released into the public domain under the CC0 1.0 Universal dedication (see [LICENSE](LICENSE)). It contains only factual metadata and manually logged timestamps.
 
 The public domain licence applies only to the dataset itself.
 **All referenced YouTube videos remain the property of their respective rights holders. No video content is hosted, stored, or redistributed in this repository.**
