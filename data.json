@@ -221,6 +221,91 @@
           ]
         }
       ]
+    },
+    {
+      "id": "wi_pak_1st_odi_2025",
+      "youtube_url": "https://www.youtube.com/watch?v=VryvrvQfjNw",
+      "match": {
+        "teams": ["West Indies", "Pakistan"],
+        "venue": "Brian Lara Stadium, Tarouba",
+        "format": "ODI",
+        "year": 2025,
+        "match_date": "2025-08-07"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "broadcaster": "",
+        "umpires": ["Allahuddien Paleker", "Deighton Butler"],
+        "referee": "Richie Richardson"
+      },
+      "deliveries": [
+        {
+          "id": "inn2_ov11_ball5",
+          "innings": 2,
+          "over": 11,
+          "ball": 5,
+          "team_bowling": "West Indies",
+          "team_batting": "Pakistan",
+          "bowler": "Shamar Joseph",
+          "batter": "Abdullah Shafique",
+          "onfield_decision": "Not Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:12:05",
+              "end": "00:12:14",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:12:15",
+              "end": "00:12:26",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn2_ov37_ball2",
+          "innings": 2,
+          "over": 37,
+          "ball": 2,
+          "team_bowling": "West Indies",
+          "team_batting": "Pakistan",
+          "bowler": "Shamar Joseph",
+          "batter": "Mohammad Rizwan",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:14:26",
+              "end": "00:14:36",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:14:37",
+              "end": "00:14:51",
+              "notes": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
