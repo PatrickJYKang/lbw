@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LBW Review Video Dataset",
+  "type": "object",
+
+  "properties": {
+    "videos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the highlight video"
+          },
+          "youtube_url": {
+            "type": "string",
+            "format": "uri"
+          },
+
+          "match": {
+            "type": "object",
+            "properties": {
+              "teams": {
+                "type": "array",
+                "items": { "type": "string" },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "venue": { "type": "string" },
+              "format": { "type": "string" },
+              "year": { "type": "integer" },
+              "match_date": {
+                "type": "string",
+                "format": "date"
+              }
+            },
+            "required": ["teams", "venue"]
+          },
+
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "source": { "type": "string" },
+              "broadcaster": { "type": "string" },
+              "umpires": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "referee": { "type": "string" }
+            }
+          },
+
+          "deliveries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "innings": { "type": "integer" },
+                "over": { "type": "integer" },
+                "ball": { "type": "integer" },
+
+                "team_bowling": { "type": "string" },
+                "team_batting": { "type": "string" },
+
+                "bowler": { "type": "string" },
+                "batter": { "type": "string" },
+
+                "onfield_decision": {
+                  "type": "string",
+                  "enum": ["Out", "Not Out"]
+                },
+                "final_decision": {
+                  "type": "string",
+                  "enum": [
+                    "Out",
+                    "Not Out",
+                    "Umpire's Call – Out",
+                    "Umpire's Call – Not Out"
+                  ]
+                },
+
+                "drs": {
+                  "type": "object",
+                  "description": "Ball tracking components",
+                  "properties": {
+                    "pitching": {
+                      "type": "string",
+                      "enum": [
+                        "in-line",
+                        "outside-off",
+                        "outside-leg",
+                        "umpires-call"
+                      ]
+                    },
+                    "impact": {
+                      "type": "string",
+                      "enum": [
+                        "in-line",
+                        "outside-off",
+                        "umpires-call"
+                      ]
+                    },
+                    "wickets": {
+                      "type": "string",
+                      "enum": [
+                        "hitting",
+                        "missing",
+                        "umpires-call"
+                      ]
+                    }
+                  },
+                  "required": ["pitching", "impact", "wickets"]
+                },
+
+                "clips": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": ["delivery", "review"]
+                      },
+                      "tag": { "type": "string" },
+                      "start": {
+                        "type": "string",
+                        "pattern": "^[0-9]{2}:[0-9]{2}:[0-9]{2}$",
+                        "description": "HH:MM:SS timestamp"
+                      },
+                      "end": {
+                        "type": "string",
+                        "pattern": "^[0-9]{2}:[0-9]{2}:[0-9]{2}$"
+                      },
+                      "notes": { "type": "string" }
+                    },
+                    "required": ["type", "start", "end"]
+                  }
+                }
+              },
+
+              "required": [
+                "id",
+                "innings",
+                "over",
+                "ball",
+                "bowler",
+                "batter",
+                "onfield_decision",
+                "final_decision",
+                "drs",
+                "clips"
+              ]
+            }
+          }
+        },
+
+        "required": ["id", "youtube_url", "match", "deliveries"]
+      }
+    }
+  },
+
+  "required": ["videos"]
+}
