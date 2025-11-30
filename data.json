@@ -131,7 +131,7 @@
       "metadata": {
         "source": "Official match highlights",
         "broadcaster": "Sky Sports Cricket",
-        "umpires": ["Kumar Dharmasena (SL)", "Ahsan Raza (PAK)"],
+        "umpires": ["Kumar Dharmasena", "Ahsan Raza"],
         "referee": ""
       },
       "deliveries": [
@@ -183,8 +183,8 @@
       "metadata": {
         "source": "Official match highlights",
         "broadcaster": "Fox Cricket",
-        "umpires": [],
-        "referee": ""
+        "umpires": ["Phillip Gillespie", "Rod Tucker"],
+        "referee": "Jeff Crowe"
       },
       "deliveries": [
         {
