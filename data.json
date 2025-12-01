@@ -455,6 +455,57 @@
           ]
         }
       ]
+    },
+    {
+      "id": "sl_nz_2nd_t20i_2024",
+      "youtube_url": "https://www.youtube.com/watch?v=n2X11_HYf_M",
+      "match": {
+        "teams": ["Sri Lanka", "New Zealand"],
+        "venue": "Rangiri Dambulla International Stadium, Dambulla",
+        "format": "T20I",
+        "year": 2024,
+        "match_date": "2024-11-09"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": ["Prageeth Rambukwella", "Ruchira Palliyaguruge"],
+        "referee": "Ranjan Madugalle"
+      },
+      "deliveries": [
+        {
+          "id": "inn2_ov7_ball1",
+          "innings": 2,
+          "over": 7,
+          "ball": 1,
+          "team_bowling": "New Zealand",
+          "team_batting": "Sri Lanka",
+          "bowler": "Lockie Ferguson",
+          "batter": "Kamindu Mendis",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:15:24",
+              "end": "00:15:39",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:15:40",
+              "end": "00:15:55",
+              "notes": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
