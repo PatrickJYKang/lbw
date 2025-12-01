@@ -28,6 +28,11 @@ def _compute_metrics(data: dict) -> dict:
     delivery_count = 0
     clip_lengths = {"delivery": [], "review": []}
     format_counter: Counter[str] = Counter()
+    onfield_counter: Counter[str] = Counter()
+    final_counter: Counter[str] = Counter()
+    pitching_counter: Counter[str] = Counter()
+    impact_counter: Counter[str] = Counter()
+    wickets_counter: Counter[str] = Counter()
 
     for video in videos:
         match_info = video.get("match", {})
@@ -37,6 +42,25 @@ def _compute_metrics(data: dict) -> dict:
             delivery_count += 1
             if format_name:
                 format_counter[format_name] += 1
+
+            on_decision = delivery.get("onfield_decision")
+            final_decision = delivery.get("final_decision")
+            if on_decision:
+                onfield_counter[on_decision] += 1
+            if final_decision:
+                final_counter[final_decision] += 1
+
+            drs = delivery.get("drs", {})
+            pitch = drs.get("pitching")
+            if pitch:
+                pitching_counter[pitch] += 1
+            impact = drs.get("impact")
+            if impact:
+                impact_counter[impact] += 1
+            wickets = drs.get("wickets")
+            if wickets:
+                wickets_counter[wickets] += 1
+
             for clip in delivery.get("clips", []):
                 clip_type = clip.get("type")
                 if clip_type not in clip_lengths:
@@ -53,6 +77,11 @@ def _compute_metrics(data: dict) -> dict:
         "delivery_count": delivery_count,
         "format_counts": format_counter,
         "avg_clip_lengths": {},
+        "onfield_counts": onfield_counter,
+        "final_counts": final_counter,
+        "pitching_counts": pitching_counter,
+        "impact_counts": impact_counter,
+        "wickets_counts": wickets_counter,
     }
 
     for clip_type, durations in clip_lengths.items():
@@ -104,6 +133,31 @@ def main():
         print("Deliveries per format:")
         for fmt, count in metrics["format_counts"].most_common():
             print(f"  {fmt}: {count}")
+
+    if metrics["onfield_counts"]:
+        print("On-field decisions:")
+        for decision, count in metrics["onfield_counts"].most_common():
+            print(f"  {decision}: {count}")
+
+    if metrics["final_counts"]:
+        print("Final decisions:")
+        for decision, count in metrics["final_counts"].most_common():
+            print(f"  {decision}: {count}")
+
+    if metrics["pitching_counts"]:
+        print("DRS pitching:")
+        for value, count in metrics["pitching_counts"].most_common():
+            print(f"  {value}: {count}")
+
+    if metrics["impact_counts"]:
+        print("DRS impact:")
+        for value, count in metrics["impact_counts"].most_common():
+            print(f"  {value}: {count}")
+
+    if metrics["wickets_counts"]:
+        print("DRS wickets:")
+        for value, count in metrics["wickets_counts"].most_common():
+            print(f"  {value}: {count}")
 
     avg_delivery = metrics["avg_clip_lengths"].get("delivery", 0)
     avg_review = metrics["avg_clip_lengths"].get("review", 0)

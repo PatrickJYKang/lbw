@@ -4,7 +4,10 @@
       "id": "ashes_2025_26_1stTest_day1",
       "youtube_url": "https://www.youtube.com/watch?v=ptKLdFTZSCw",
       "match": {
-        "teams": ["Australia", "England"],
+        "teams": [
+          "Australia",
+          "England"
+        ],
         "venue": "Optus Stadium, Perth",
         "format": "Test",
         "year": 2025,
@@ -12,7 +15,10 @@
       },
       "metadata": {
         "source": "Official match highlights",
-        "umpires": ["Adrian Holdstock", "Nitin Menon"],
+        "umpires": [
+          "Adrian Holdstock",
+          "Nitin Menon"
+        ],
         "referee": "Ranjan Madugalle"
       },
       "deliveries": [
@@ -20,7 +26,7 @@
           "id": "inn1_ov6_ball3",
           "innings": 1,
           "over": 6,
-          "ball": 3,
+          "ball": 4,
           "team_bowling": "Australia",
           "team_batting": "England",
           "bowler": "Mitchell Starc",
@@ -53,13 +59,13 @@
           "id": "inn1_ov19_ball5",
           "innings": 1,
           "over": 19,
-          "ball": 5,
+          "ball": 6,
           "team_bowling": "Australia",
           "team_batting": "England",
           "bowler": "Cameron Green",
           "batter": "Ollie Pope",
           "onfield_decision": "Out",
-          "final_decision": "Umpire's Call – Out",
+          "final_decision": "Umpire's Call \u2013 Out",
           "drs": {
             "pitching": "in-line",
             "impact": "in-line",
@@ -86,7 +92,7 @@
           "id": "inn2_ov1_ball2",
           "innings": 2,
           "over": 1,
-          "ball": 2,
+          "ball": 3,
           "team_bowling": "England",
           "team_batting": "Australia",
           "bowler": "Jofra Archer",
@@ -121,7 +127,10 @@
       "id": "rothesay_test_day5_2025",
       "youtube_url": "https://www.youtube.com/watch?v=yzr2rXRGJz8",
       "match": {
-        "teams": ["England", "India"],
+        "teams": [
+          "England",
+          "India"
+        ],
         "venue": "The Oval, London",
         "format": "Test",
         "year": 2025,
@@ -129,7 +138,10 @@
       },
       "metadata": {
         "source": "Official match highlights",
-        "umpires": ["Kumar Dharmasena", "Ahsan Raza"],
+        "umpires": [
+          "Kumar Dharmasena",
+          "Ahsan Raza"
+        ],
         "referee": ""
       },
       "deliveries": [
@@ -172,7 +184,10 @@
       "id": "aus_ind_4th_t20i_2025",
       "youtube_url": "https://www.youtube.com/watch?v=6nKGHuRQbLk",
       "match": {
-        "teams": ["Australia", "India"],
+        "teams": [
+          "Australia",
+          "India"
+        ],
         "venue": "Carrara Stadium, Gold Coast",
         "format": "T20I",
         "year": 2025,
@@ -180,7 +195,10 @@
       },
       "metadata": {
         "source": "Official match highlights",
-        "umpires": ["Phillip Gillespie", "Rod Tucker"],
+        "umpires": [
+          "Phillip Gillespie",
+          "Rod Tucker"
+        ],
         "referee": "Jeff Crowe"
       },
       "deliveries": [
@@ -188,7 +206,7 @@
           "id": "inn2_ov4_ball4",
           "innings": 2,
           "over": 4,
-          "ball": 4,
+          "ball": 5,
           "team_bowling": "India",
           "team_batting": "Australia",
           "bowler": "Axar Patel",
@@ -223,7 +241,10 @@
       "id": "wi_pak_1st_odi_2025",
       "youtube_url": "https://www.youtube.com/watch?v=VryvrvQfjNw",
       "match": {
-        "teams": ["West Indies", "Pakistan"],
+        "teams": [
+          "West Indies",
+          "Pakistan"
+        ],
         "venue": "Brian Lara Stadium, Tarouba",
         "format": "ODI",
         "year": 2025,
@@ -231,7 +252,10 @@
       },
       "metadata": {
         "source": "Official match highlights",
-        "umpires": ["Allahuddien Paleker", "Deighton Butler"],
+        "umpires": [
+          "Allahuddien Paleker",
+          "Deighton Butler"
+        ],
         "referee": "Richie Richardson"
       },
       "deliveries": [
@@ -239,7 +263,7 @@
           "id": "inn2_ov11_ball5",
           "innings": 2,
           "over": 11,
-          "ball": 5,
+          "ball": 6,
           "team_bowling": "West Indies",
           "team_batting": "Pakistan",
           "bowler": "Shamar Joseph",
@@ -272,7 +296,7 @@
           "id": "inn2_ov37_ball2",
           "innings": 2,
           "over": 37,
-          "ball": 2,
+          "ball": 3,
           "team_bowling": "West Indies",
           "team_batting": "Pakistan",
           "bowler": "Shamar Joseph",
@@ -307,7 +331,10 @@
       "id": "wi_ban_1st_test_day1_2024",
       "youtube_url": "https://www.youtube.com/watch?v=vUnsOXWOE1I",
       "match": {
-        "teams": ["West Indies", "Bangladesh"],
+        "teams": [
+          "West Indies",
+          "Bangladesh"
+        ],
         "venue": "Sir Vivian Richards Stadium, North Sound",
         "format": "Test",
         "year": 2024,
@@ -315,7 +342,10 @@
       },
       "metadata": {
         "source": "Official match highlights",
-        "umpires": ["Kumar Dharmasena", "Nitin Menon"],
+        "umpires": [
+          "Kumar Dharmasena",
+          "Nitin Menon"
+        ],
         "referee": "Jeff Crowe"
       },
       "deliveries": [
@@ -323,7 +353,7 @@
           "id": "inn1_ov84_ball4",
           "innings": 1,
           "over": 84,
-          "ball": 4,
+          "ball": 5,
           "team_bowling": "Bangladesh",
           "team_batting": "West Indies",
           "bowler": "Hasan Mahmud",
@@ -358,7 +388,10 @@
       "id": "wi_ban_1st_test_day2_2024",
       "youtube_url": "https://www.youtube.com/watch?v=CMXJFG-2IWk",
       "match": {
-        "teams": ["West Indies", "Bangladesh"],
+        "teams": [
+          "West Indies",
+          "Bangladesh"
+        ],
         "venue": "Sir Vivian Richards Stadium, North Sound",
         "format": "Test",
         "year": 2024,
@@ -366,7 +399,10 @@
       },
       "metadata": {
         "source": "Official match highlights",
-        "umpires": ["Kumar Dharmasena", "Nitin Menon"],
+        "umpires": [
+          "Kumar Dharmasena",
+          "Nitin Menon"
+        ],
         "referee": "Jeff Crowe"
       },
       "deliveries": [
@@ -409,7 +445,10 @@
       "id": "sl_nz_1st_t20i_2024",
       "youtube_url": "https://www.youtube.com/watch?v=eS6sqJP1Tdg",
       "match": {
-        "teams": ["Sri Lanka", "New Zealand"],
+        "teams": [
+          "Sri Lanka",
+          "New Zealand"
+        ],
         "venue": "Rangiri Dambulla International Stadium, Dambulla",
         "format": "T20I",
         "year": 2024,
@@ -417,7 +456,10 @@
       },
       "metadata": {
         "source": "Official match highlights",
-        "umpires": ["Lyndon Hannibal", "Raveendra Wimalasiri"],
+        "umpires": [
+          "Lyndon Hannibal",
+          "Raveendra Wimalasiri"
+        ],
         "referee": "Ranjan Madugalle"
       },
       "deliveries": [
@@ -425,7 +467,7 @@
           "id": "inn1_ov5_ball5",
           "innings": 1,
           "over": 5,
-          "ball": 5,
+          "ball": 6,
           "team_bowling": "New Zealand",
           "team_batting": "Sri Lanka",
           "bowler": "Ish Sodhi",
@@ -460,7 +502,10 @@
       "id": "sl_nz_2nd_t20i_2024",
       "youtube_url": "https://www.youtube.com/watch?v=n2X11_HYf_M",
       "match": {
-        "teams": ["Sri Lanka", "New Zealand"],
+        "teams": [
+          "Sri Lanka",
+          "New Zealand"
+        ],
         "venue": "Rangiri Dambulla International Stadium, Dambulla",
         "format": "T20I",
         "year": 2024,
@@ -468,7 +513,10 @@
       },
       "metadata": {
         "source": "Official match highlights",
-        "umpires": ["Prageeth Rambukwella", "Ruchira Palliyaguruge"],
+        "umpires": [
+          "Prageeth Rambukwella",
+          "Ruchira Palliyaguruge"
+        ],
         "referee": "Ranjan Madugalle"
       },
       "deliveries": [
@@ -501,6 +549,303 @@
               "tag": "drs_review",
               "start": "00:15:40",
               "end": "00:15:55",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wi_eng_1st_t20i_2024",
+      "youtube_url": "https://www.youtube.com/watch?v=7EjVSTgZV3E",
+      "match": {
+        "teams": [
+          "West Indies",
+          "England"
+        ],
+        "venue": "Kensington Oval, Bridgetown",
+        "format": "T20I",
+        "year": 2024,
+        "match_date": "2024-11-08"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Leslie Reifer",
+          "Zahid Bassarath"
+        ],
+        "referee": "Richie Richardson"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov14_ball3",
+          "innings": 1,
+          "over": 14,
+          "ball": 4,
+          "team_bowling": "England",
+          "team_batting": "West Indies",
+          "bowler": "Adil Rashid",
+          "batter": "Akeal Hosein",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:03:24",
+              "end": "00:03:29",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:03:29",
+              "end": "00:03:44",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sa_ire_1st_odi_2024",
+      "youtube_url": "https://www.youtube.com/watch?v=hZ3_VvwIM1g",
+      "match": {
+        "teams": [
+          "South Africa",
+          "Ireland"
+        ],
+        "venue": "Zayed Cricket Stadium, Abu Dhabi",
+        "format": "ODI",
+        "year": 2024,
+        "match_date": "2024-10-01"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Langton Rusere",
+          "Roly Black"
+        ],
+        "referee": "Ranjan Madugalle"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov6_ball4",
+          "innings": 1,
+          "over": 6,
+          "ball": 5,
+          "team_bowling": "Ireland",
+          "team_batting": "South Africa",
+          "bowler": "Mark Adair",
+          "batter": "Temba Bavuma",
+          "onfield_decision": "Out",
+          "final_decision": "Not Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "missing"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:01:24",
+              "end": "00:01:42",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:01:43",
+              "end": "00:02:07",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn2_ov8_ball2",
+          "innings": 2,
+          "over": 8,
+          "ball": 3,
+          "team_bowling": "South Africa",
+          "team_batting": "Ireland",
+          "bowler": "Lizaad Williams",
+          "batter": "Andy Balbirnie",
+          "onfield_decision": "Not Out",
+          "final_decision": "Not Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "missing"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:13:20",
+              "end": "00:13:37",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:13:38",
+              "end": "00:13:51",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn2_ov10_ball4",
+          "innings": 2,
+          "over": 10,
+          "ball": 5,
+          "team_bowling": "South Africa",
+          "team_batting": "Ireland",
+          "bowler": "Lizaad Williams",
+          "batter": "Harry Tector",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:14:49",
+              "end": "00:15:02",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:15:03",
+              "end": "00:15:19",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn2_ov25_ball2",
+          "innings": 2,
+          "over": 25,
+          "ball": 3,
+          "team_bowling": "South Africa",
+          "team_batting": "Ireland",
+          "bowler": "Bjorn Fortuin",
+          "batter": "Gavin Hoey",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:18:55",
+              "end": "00:19:18",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:19:19",
+              "end": "00:19:42",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strikers_sixers_bbl35_2025",
+      "youtube_url": "https://www.youtube.com/watch?v=Xi8YSbLuTPc",
+      "match": {
+        "teams": ["Adelaide Strikers", "Sydney Sixers"],
+        "venue": "Adelaide Oval",
+        "format": "T20",
+        "year": 2025,
+        "match_date": "2025-01-14"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": ["Donovan Koch", "Simon Lightbody"],
+        "referee": "Simon Fry"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov9_ball6",
+          "innings": 1,
+          "over": 9,
+          "ball": 6,
+          "team_bowling": "Adelaide Strikers",
+          "team_batting": "Sydney Sixers",
+          "bowler": "Jamie Overton",
+          "batter": "Jordan Silk",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "outside-off",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:06:47",
+              "end": "00:06:58",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:06:59",
+              "end": "00:07:13",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn2_ov18_ball1",
+          "innings": 2,
+          "over": 18,
+          "ball": 1,
+          "team_bowling": "Adelaide Strikers",
+          "team_batting": "Sydney Sixers",
+          "bowler": "Lloyd Pope",
+          "batter": "Lachlan Shaw",
+          "onfield_decision": "Not Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:08:36",
+              "end": "00:08:50",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:08:51",
+              "end": "00:09:04",
               "notes": ""
             }
           ]

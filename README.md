@@ -10,7 +10,8 @@ The dataset **excludes compilation videos** and uses only **full-match or extend
 ```
 ├── data.json              # Main dataset containing all videos and deliveries
 ├── lbw_schema.json        # JSON Schema defining the data requirements
-└── validate.py            # Script for validating data.json
+├── serve_random.py        # Utility script to pick a random delivery with deep-linked clips
+└── validate.py            # Schema validator plus dataset metrics
 ```
 
 ## JSON Structure Overview
