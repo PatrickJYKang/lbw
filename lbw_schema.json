@@ -42,7 +42,6 @@
             "type": "object",
             "properties": {
               "source": { "type": "string" },
-              "broadcaster": { "type": "string" },
               "umpires": {
                 "type": "array",
                 "items": { "type": "string" }
