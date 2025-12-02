@@ -851,6 +851,360 @@
           ]
         }
       ]
+    },
+    {
+      "id": "t20wc_2024_groupd_match7",
+      "youtube_url": "https://www.youtube.com/watch?v=z5O0yJPHkaM",
+      "match": {
+        "teams": ["Nepal", "Netherlands"],
+        "venue": "Grand Prairie Stadium, Dallas",
+        "format": "T20I",
+        "year": 2024,
+        "match_date": "2024-06-03"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": ["Langton Rusere", "Rod Tucker"],
+        "referee": "Richie Richardson"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov3_ball5",
+          "innings": 1,
+          "over": 3,
+          "ball": 6,
+          "team_bowling": "Netherlands",
+          "team_batting": "Nepal",
+          "bowler": "Logan van Beek",
+          "batter": "Rohit Paudel",
+          "onfield_decision": "Out",
+          "final_decision": "Not Out",
+          "drs": {
+            "pitching": "na",
+            "impact": "na",
+            "wickets": "na"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:03:40",
+              "end": "00:03:52",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:03:53",
+              "end": "00:04:13",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wi_ind_2nd_test_2023_day2",
+      "youtube_url": "https://www.youtube.com/watch?v=x-ZHdBdANPw",
+      "match": {
+        "teams": [
+          "West Indies",
+          "India"
+        ],
+        "venue": "Queen's Park Oval, Port of Spain",
+        "format": "Test",
+        "year": 2023,
+        "match_date": "2023-07-19"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Marais Erasmus",
+          "Richard Kettleborough"
+        ],
+        "referee": "Jeff Crowe"
+      },
+      "deliveries": [
+        {
+          "id": "inn2_ov114_ball3",
+          "innings": 2,
+          "over": 114,
+          "ball": 3,
+          "team_bowling": "West Indies",
+          "team_batting": "India",
+          "bowler": "Jomel Warrican",
+          "batter": "Ravichandran Ashwin",
+          "onfield_decision": "Out",
+          "final_decision": "Not Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "missing"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:06:44",
+              "end": "00:06:59",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:07:00",
+              "end": "00:07:15",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn2_ov126_ball5",
+          "innings": 2,
+          "over": 126,
+          "ball": 6,
+          "team_bowling": "West Indies",
+          "team_batting": "India",
+          "bowler": "Jomel Warrican",
+          "batter": "Mohammed Siraj",
+          "onfield_decision": "Not Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:08:22",
+              "end": "00:08:48",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:08:49",
+              "end": "00:09:02",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wi_ind_2nd_test_2023_day3",
+      "youtube_url": "https://www.youtube.com/watch?v=hiBqROi5Pug",
+      "match": {
+        "teams": [
+          "West Indies",
+          "India"
+        ],
+        "venue": "Queen's Park Oval, Port of Spain",
+        "format": "Test",
+        "year": 2023,
+        "match_date": "2023-07-21"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Marais Erasmus",
+          "Richard Kettleborough"
+        ],
+        "referee": "Jeff Crowe"
+      },
+      "deliveries": [
+        {
+          "id": "inn3_ov80_ball5",
+          "innings": 3,
+          "over": 80,
+          "ball": 5,
+          "team_bowling": "India",
+          "team_batting": "West Indies",
+          "bowler": "Ravichandran Ashwin",
+          "batter": "Alick Athanaze",
+          "onfield_decision": "Not Out",
+          "final_decision": "Not Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "umpires-call"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:11:25",
+              "end": "00:12:04",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:12:05",
+              "end": "00:12:54",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn3_ov107_ball2",
+          "innings": 3,
+          "over": 107,
+          "ball": 2,
+          "team_bowling": "India",
+          "team_batting": "West Indies",
+          "bowler": "Mukesh Kumar",
+          "batter": "Alick Athanaze",
+          "onfield_decision": "Not Out",
+          "final_decision": "Not Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "umpires-call"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:21:42",
+              "end": "00:22:17",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:22:47",
+              "end": "00:22:57",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wi_ind_2nd_test_2023_day4",
+      "youtube_url": "https://www.youtube.com/watch?v=iOAfUNTWy1A",
+      "match": {
+        "teams": [
+          "West Indies",
+          "India"
+        ],
+        "venue": "Queen's Park Oval, Port of Spain",
+        "format": "Test",
+        "year": 2023,
+        "match_date": "2023-07-22"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Marais Erasmus",
+          "Richard Kettleborough"
+        ],
+        "referee": "Jeff Crowe"
+      },
+      "deliveries": [
+        {
+          "id": "inn3_ov108_ball5",
+          "innings": 3,
+          "over": 108,
+          "ball": 6,
+          "team_bowling": "India",
+          "team_batting": "West Indies",
+          "bowler": "Mukesh Kumar",
+          "batter": "Alick Athanaze",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "umpires-call",
+            "wickets": "umpires-call"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:00:00",
+              "end": "00:00:12",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:00:13",
+              "end": "00:00:44",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn3_ov111_ball5",
+          "innings": 3,
+          "over": 111,
+          "ball": 6,
+          "team_bowling": "India",
+          "team_batting": "West Indies",
+          "bowler": "Mohammed Siraj",
+          "batter": "Alzarri Joseph",
+          "onfield_decision": "Not Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:01:40",
+              "end": "00:01:54",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:01:55",
+              "end": "00:02:15",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn3_ov115_ball5",
+          "innings": 3,
+          "over": 115,
+          "ball": 6,
+          "team_bowling": "India",
+          "team_batting": "West Indies",
+          "bowler": "Mohammed Siraj",
+          "batter": "Shannon Gabriel",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:02:44",
+              "end": "00:02:59",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:02:59",
+              "end": "00:03:16",
+              "notes": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

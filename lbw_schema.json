@@ -87,6 +87,7 @@
                     "pitching": {
                       "type": "string",
                       "enum": [
+                        "na",
                         "in-line",
                         "outside-off",
                         "outside-leg",
@@ -96,6 +97,7 @@
                     "impact": {
                       "type": "string",
                       "enum": [
+                        "na",
                         "in-line",
                         "outside-off",
                         "umpires-call"
@@ -104,6 +106,7 @@
                     "wickets": {
                       "type": "string",
                       "enum": [
+                        "na",
                         "hitting",
                         "missing",
                         "umpires-call"
