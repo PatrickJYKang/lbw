@@ -21,31 +21,29 @@ def _build_link(base_url: str, timestamp: str) -> str:
     return f"{base_url}{separator}t={seconds}s"
 
 
-def _collect_deliveries(data: Dict[str, Any]) -> List[Dict[str, Any]]:
+def _collect_clips(data: Dict[str, Any]) -> List[Dict[str, Any]]:
     options: List[Dict[str, Any]] = []
     for video in data.get("videos", []):
         youtube_url = video.get("youtube_url")
         if not youtube_url:
             continue
         for delivery in video.get("deliveries", []):
-            delivery_clip: Optional[Dict[str, Any]] = None
-            review_clip: Optional[Dict[str, Any]] = None
             for clip in delivery.get("clips", []):
-                if clip.get("type") == "delivery" and delivery_clip is None:
-                    delivery_clip = clip
-                elif clip.get("type") == "review" and review_clip is None:
-                    review_clip = clip
-            if not (delivery_clip and review_clip):
-                continue
-            options.append(
-                {
-                    "video": video,
-                    "delivery": delivery,
-                    "delivery_clip": delivery_clip,
-                    "review_clip": review_clip,
-                    "youtube_url": youtube_url,
-                }
-            )
+                clip_type = clip.get("type")
+                if clip_type not in {"delivery", "review"}:
+                    continue
+                start = clip.get("start")
+                end = clip.get("end")
+                if not (start and end):
+                    continue
+                options.append(
+                    {
+                        "video": video,
+                        "delivery": delivery,
+                        "clip": clip,
+                        "youtube_url": youtube_url,
+                    }
+                )
     return options
 
 
@@ -56,42 +54,56 @@ def main() -> None:
     with DATA_PATH.open("r", encoding="utf-8") as fh:
         data = json.load(fh)
 
-    deliveries = _collect_deliveries(data)
-    if not deliveries:
-        raise RuntimeError("No valid deliveries with both delivery and review clips were found.")
+    clips = _collect_clips(data)
+    if not clips:
+        raise RuntimeError("No valid clips with both start and end times were found.")
 
-    selection = random.choice(deliveries)
+    selection = random.choice(clips)
     delivery_info = selection["delivery"]
-    delivery_clip = selection["delivery_clip"]
-    review_clip = selection["review_clip"]
+    clip = selection["clip"]
     youtube_url = selection["youtube_url"]
 
-    delivery_link = _build_link(youtube_url, delivery_clip["start"])
-    review_link = _build_link(youtube_url, review_clip["start"])
+    clip_link = _build_link(youtube_url, clip["start"])
 
     match = selection["video"].get("match", {})
     teams = match.get("teams", ["?", "?"])
     match_desc = f"{teams[0]} vs {teams[1]}" if len(teams) == 2 else "Unknown teams"
 
-    print("Random LBW delivery")
-    print("-------------------")
-    print(f"Match: {match_desc}")
-    venue = match.get("venue")
-    if venue:
-        print(f"Venue: {venue}")
-    match_date = match.get("match_date")
-    if match_date:
-        print(f"Date: {match_date}")
-    print(
-        f"Scenario: Inn {delivery_info.get('innings')} | Over {delivery_info.get('over')}"
-        f" | Ball {delivery_info.get('ball')}"
-    )
-    print(
-        f"Players: {delivery_info.get('bowler')} to {delivery_info.get('batter')}"
-    )
-    print()
-    print(f"Delivery clip: {delivery_link}")
-    print(f"Review clip:   {review_link}")
+    result = {
+        "video_id": selection["video"].get("id"),
+        "youtube_url": youtube_url,
+        "match": {
+            "description": match_desc,
+            "teams": match.get("teams"),
+            "venue": match.get("venue"),
+            "format": match.get("format"),
+            "match_date": match.get("match_date"),
+            "year": match.get("year"),
+        },
+        "delivery": {
+            "id": delivery_info.get("id"),
+            "innings": delivery_info.get("innings"),
+            "over": delivery_info.get("over"),
+            "ball": delivery_info.get("ball"),
+            "team_bowling": delivery_info.get("team_bowling"),
+            "team_batting": delivery_info.get("team_batting"),
+            "bowler": delivery_info.get("bowler"),
+            "batter": delivery_info.get("batter"),
+            "onfield_decision": delivery_info.get("onfield_decision"),
+            "final_decision": delivery_info.get("final_decision"),
+            "drs": delivery_info.get("drs"),
+        },
+        "clip": {
+            "type": clip.get("type"),
+            "start": clip.get("start"),
+            "end": clip.get("end"),
+            "link": clip_link,
+            "tag": clip.get("tag"),
+            "notes": clip.get("notes"),
+        },
+    }
+
+    print(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":

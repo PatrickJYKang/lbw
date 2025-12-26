@@ -1,0 +1,7 @@
+.cricinfo_probe/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.cricinfo_profile/
+cricinfo_playwright_probe.py

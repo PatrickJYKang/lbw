@@ -1142,7 +1142,7 @@
           "id": "inn3_ov111_ball5",
           "innings": 3,
           "over": 111,
-          "ball": 6,
+          "ball": 4,
           "team_bowling": "India",
           "team_batting": "West Indies",
           "bowler": "Mohammed Siraj",
@@ -1175,7 +1175,7 @@
           "id": "inn3_ov115_ball5",
           "innings": 3,
           "over": 115,
-          "ball": 6,
+          "ball": 4,
           "team_bowling": "India",
           "team_batting": "West Indies",
           "bowler": "Mohammed Siraj",
@@ -1200,6 +1200,267 @@
               "tag": "drs_review",
               "start": "00:02:59",
               "end": "00:03:16",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nz_wi_2nd_test_2025",
+      "youtube_url": "https://www.youtube.com/watch?v=dVcqw8tcd4s",
+      "match": {
+        "teams": [
+          "New Zealand",
+          "West Indies"
+        ],
+        "venue": "Basin Reserve, Wellington",
+        "format": "Test",
+        "year": 2025,
+        "match_date": "2025-12-09"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Alex Wharf",
+          "Allahuddien Paleker"
+        ],
+        "referee": "Javagal Srinath"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov42_ball6",
+          "innings": 1,
+          "over": 42,
+          "ball": 6,
+          "team_bowling": "New Zealand",
+          "team_batting": "West Indies",
+          "bowler": "Jacob Duffy",
+          "batter": "Justin Greaves",
+          "onfield_decision": "Not Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "outside-off",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:03:08",
+              "end": "00:03:13",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:03:19",
+              "end": "00:03:30",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thunder_heat_bbl9_2025",
+      "youtube_url": "https://www.youtube.com/watch?v=ENBKVzvAAZ0",
+      "match": {
+        "teams": [
+          "Sydney Thunder",
+          "Brisbane Heat"
+        ],
+        "venue": "Manuka Oval, Canberra",
+        "format": "T20",
+        "year": 2025,
+        "match_date": "2025-12-21"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Claire Polosak",
+          "Shawn Craig"
+        ],
+        "referee": "Kent Hannam"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov18_ball6",
+          "innings": 1,
+          "over": 18,
+          "ball": 6,
+          "team_bowling": "Brisbane Heat",
+          "team_batting": "Sydney Thunder",
+          "bowler": "Shaheen Afridi",
+          "batter": "Matthew Gilkes",
+          "onfield_decision": "Not Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "na",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:03:59",
+              "end": "00:04:11",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:04:12",
+              "end": "00:04:26",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renegades_hurricanes_bbl8_2025",
+      "youtube_url": "https://www.youtube.com/watch?v=1MtqcxjXXQk",
+      "match": {
+        "teams": [
+          "Melbourne Renegades",
+          "Hobart Hurricanes"
+        ],
+        "venue": "GMHBA Stadium, Geelong",
+        "format": "T20",
+        "year": 2025,
+        "match_date": "2025-12-20"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Gerard Abood",
+          "Stephen Dionysius"
+        ],
+        "referee": "Bob Parry"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov17_ball1",
+          "innings": 1,
+          "over": 17,
+          "ball": 1,
+          "team_bowling": "Hobart Hurricanes",
+          "team_batting": "Melbourne Renegades",
+          "bowler": "Chris Jordan",
+          "batter": "Hassan Khan",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "na",
+            "impact": "in-line",
+            "wickets": "umpires-call"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:03:50",
+              "end": "00:03:57",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:03:58",
+              "end": "00:04:07",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "inn1_ov17_ball2",
+          "innings": 1,
+          "over": 17,
+          "ball": 4,
+          "team_bowling": "Hobart Hurricanes",
+          "team_batting": "Melbourne Renegades",
+          "bowler": "Chris Jordan",
+          "batter": "Will Sutherland",
+          "onfield_decision": "Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:04:09",
+              "end": "00:04:15",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:04:16",
+              "end": "00:04:24",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eng_sa_3rd_odi_2025",
+      "youtube_url": "https://www.youtube.com/watch?v=j6DOlr1wLA8",
+      "match": {
+        "teams": [
+          "England",
+          "South Africa"
+        ],
+        "venue": "The Rose Bowl, Southampton",
+        "format": "ODI",
+        "year": 2025,
+        "match_date": "2025-09-06"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Nitin Menon",
+          "Russell Warren"
+        ],
+        "referee": "Javagal Srinath"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov36_ball2",
+          "innings": 1,
+          "over": 36,
+          "ball": 2,
+          "team_bowling": "South Africa",
+          "team_batting": "England",
+          "bowler": "Corbin Bosch",
+          "batter": "Jacob Bethell",
+          "onfield_decision": "Not Out",
+          "final_decision": "Not Out",
+          "drs": {
+            "pitching": "outside-leg",
+            "impact": "na",
+            "wickets": "na"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:05:28",
+              "end": "00:05:39",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:05:40",
+              "end": "00:05:59",
               "notes": ""
             }
           ]
