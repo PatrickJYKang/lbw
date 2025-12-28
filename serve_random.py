@@ -21,29 +21,39 @@ def _build_link(base_url: str, timestamp: str) -> str:
     return f"{base_url}{separator}t={seconds}s"
 
 
-def _collect_clips(data: Dict[str, Any]) -> List[Dict[str, Any]]:
+def _collect_deliveries(data: Dict[str, Any]) -> List[Dict[str, Any]]:
     options: List[Dict[str, Any]] = []
     for video in data.get("videos", []):
         youtube_url = video.get("youtube_url")
         if not youtube_url:
             continue
         for delivery in video.get("deliveries", []):
+            delivery_clip: Optional[Dict[str, Any]] = None
+            review_clip: Optional[Dict[str, Any]] = None
             for clip in delivery.get("clips", []):
                 clip_type = clip.get("type")
-                if clip_type not in {"delivery", "review"}:
-                    continue
-                start = clip.get("start")
-                end = clip.get("end")
-                if not (start and end):
-                    continue
-                options.append(
-                    {
-                        "video": video,
-                        "delivery": delivery,
-                        "clip": clip,
-                        "youtube_url": youtube_url,
-                    }
-                )
+                if clip_type == "delivery" and delivery_clip is None:
+                    delivery_clip = clip
+                elif clip_type == "review" and review_clip is None:
+                    review_clip = clip
+
+            if not (delivery_clip and review_clip):
+                continue
+
+            if not (delivery_clip.get("start") and delivery_clip.get("end")):
+                continue
+            if not (review_clip.get("start") and review_clip.get("end")):
+                continue
+
+            options.append(
+                {
+                    "video": video,
+                    "delivery": delivery,
+                    "delivery_clip": delivery_clip,
+                    "review_clip": review_clip,
+                    "youtube_url": youtube_url,
+                }
+            )
     return options
 
 
@@ -54,16 +64,18 @@ def main() -> None:
     with DATA_PATH.open("r", encoding="utf-8") as fh:
         data = json.load(fh)
 
-    clips = _collect_clips(data)
-    if not clips:
-        raise RuntimeError("No valid clips with both start and end times were found.")
+    deliveries = _collect_deliveries(data)
+    if not deliveries:
+        raise RuntimeError("No valid deliveries with both delivery and review clips were found.")
 
-    selection = random.choice(clips)
+    selection = random.choice(deliveries)
     delivery_info = selection["delivery"]
-    clip = selection["clip"]
+    delivery_clip = selection["delivery_clip"]
+    review_clip = selection["review_clip"]
     youtube_url = selection["youtube_url"]
 
-    clip_link = _build_link(youtube_url, clip["start"])
+    delivery_link = _build_link(youtube_url, delivery_clip["start"])
+    review_link = _build_link(youtube_url, review_clip["start"])
 
     match = selection["video"].get("match", {})
     teams = match.get("teams", ["?", "?"])
@@ -93,13 +105,21 @@ def main() -> None:
             "final_decision": delivery_info.get("final_decision"),
             "drs": delivery_info.get("drs"),
         },
-        "clip": {
-            "type": clip.get("type"),
-            "start": clip.get("start"),
-            "end": clip.get("end"),
-            "link": clip_link,
-            "tag": clip.get("tag"),
-            "notes": clip.get("notes"),
+        "clips": {
+            "delivery": {
+                "start": delivery_clip.get("start"),
+                "end": delivery_clip.get("end"),
+                "link": delivery_link,
+                "tag": delivery_clip.get("tag"),
+                "notes": delivery_clip.get("notes"),
+            },
+            "review": {
+                "start": review_clip.get("start"),
+                "end": review_clip.get("end"),
+                "link": review_link,
+                "tag": review_clip.get("tag"),
+                "notes": review_clip.get("notes"),
+            },
         },
     }
 
