@@ -57,11 +57,12 @@ def _collect_deliveries(data: Dict[str, Any]) -> List[Dict[str, Any]]:
     return options
 
 
-def main() -> None:
-    if not DATA_PATH.exists():
-        raise FileNotFoundError(f"Unable to locate data file at {DATA_PATH}")
+def get_random_trivia(data_path: Path = DATA_PATH) -> Dict[str, Any]:
+    """Return a random trivia payload derived from the LBW dataset."""
+    if not data_path.exists():
+        raise FileNotFoundError(f"Unable to locate data file at {data_path}")
 
-    with DATA_PATH.open("r", encoding="utf-8") as fh:
+    with data_path.open("r", encoding="utf-8") as fh:
         data = json.load(fh)
 
     deliveries = _collect_deliveries(data)
@@ -81,7 +82,7 @@ def main() -> None:
     teams = match.get("teams", ["?", "?"])
     match_desc = f"{teams[0]} vs {teams[1]}" if len(teams) == 2 else "Unknown teams"
 
-    result = {
+    return {
         "video_id": selection["video"].get("id"),
         "youtube_url": youtube_url,
         "match": {
@@ -123,7 +124,9 @@ def main() -> None:
         },
     }
 
-    print(json.dumps(result, indent=2))
+
+def main() -> None:
+    print(json.dumps(get_random_trivia(), indent=2))
 
 
 if __name__ == "__main__":
