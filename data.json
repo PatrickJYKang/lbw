@@ -1466,6 +1466,120 @@
           ]
         }
       ]
+    },
+    {
+      "id": "eng_nz_final_odi_2019",
+      "youtube_url": "https://www.youtube.com/watch?v=pQ5xEiZ-5IE",
+      "match": {
+        "teams": [
+          "England",
+          "New Zealand"
+        ],
+        "venue": "Lord's, London",
+        "format": "ODI",
+        "year": 2019,
+        "match_date": "2019-07-13"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Kumar Dharmasena",
+          "Marais Erasmus"
+        ],
+        "referee": "Ranjan Madugalle"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov2_ball3",
+          "innings": 1,
+          "over": 2,
+          "ball": 3,
+          "team_bowling": "England",
+          "team_batting": "New Zealand",
+          "bowler": "Chris Woakes",
+          "batter": "Henry Nicholls",
+          "onfield_decision": "Out",
+          "final_decision": "Not Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "missing"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:00:11",
+              "end": "00:00:18",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:00:19",
+              "end": "00:00:31",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wi_ind_1st_test_2023",
+      "youtube_url": "https://www.youtube.com/watch?v=WtNWKT74Nh4",
+      "match": {
+        "teams": [
+          "West Indies",
+          "India"
+        ],
+        "venue": "Windsor Park, Roseau",
+        "format": "Test",
+        "year": 2023,
+        "match_date": "2023-07-11"
+      },
+      "metadata": {
+        "source": "Official match highlights",
+        "umpires": [
+          "Richard Kettleborough",
+          "Michael Gough"
+        ],
+        "referee": "Jeff Crowe"
+      },
+      "deliveries": [
+        {
+          "id": "inn1_ov61_ball3",
+          "innings": 1,
+          "over": 61,
+          "ball": 3,
+          "team_bowling": "India",
+          "team_batting": "West Indies",
+          "bowler": "Ravindra Jadeja",
+          "batter": "Kemar Roach",
+          "onfield_decision": "Not Out",
+          "final_decision": "Out",
+          "drs": {
+            "pitching": "in-line",
+            "impact": "in-line",
+            "wickets": "hitting"
+          },
+          "clips": [
+            {
+              "type": "delivery",
+              "tag": "lbw_appeal",
+              "start": "00:08:04",
+              "end": "00:08:23",
+              "notes": ""
+            },
+            {
+              "type": "review",
+              "tag": "drs_review",
+              "start": "00:08:24",
+              "end": "00:08:36",
+              "notes": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
